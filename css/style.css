@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 960px;  
+}
+.top-line{
+    padding: 18px 0;
+    background-color: #1f1f56;
+}
+.top-line ul{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.top-menu li,
+.social li{
+    display: inline-block;
+}
+.top-menu a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+.top-menu a:hover{
+    color: #fd8300;
+}
+nav{
+    float: left;
+}
+.social{
+    float: right;
+}
+.social li{
+    margin-left: 15px;
+}
+.social a{
+    display: block;
+    transition: all 0.5s ease;
+    background: url(../image/social-sprite.png)no-repeat left top;
+}
+a.fb{
+    width: 10px;
+    height: 18px;
+    background-position: -45px -1px;
+}
+a.tw{
+    width: 18px;
+    height: 15px;
+    background-position: -25px -5px;
+}
+a.in{
+    width: 19px;
+    height: 19px;
+    background-position: -2px -1px;
+}
+a.fb:hover{
+    background-position: -45px -22px;
+}
+a.tw:hover{
+    background-position: -25px -25px;
+}
+a.in:hover{
+    background-position: -2px -22px;
+}
+.header-contact{
+    display: block;
+    margin: 0;
+    padding: 30px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.row{
+    margin: 0 -14px;
+    font-size: 0;
+}
+.column{
+    display: inline-block;
+    margin: 0 14px;
+    width: 219px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.logo{
+    position: relative;
+}
+.logo a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.tell{
+    position: relative;
+}
+.tell::before,
+.mail::before,
+.skype::before{
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    background: url(../image/social-sprite.png)no-repeat;  
+}
+.tell::before{
+    background-position: -22px -43px;
+}
+.phones,
+.mesenger{
+    position: relative;
+    padding-left: 48px;
+}
+.phones p{
+    margin: 0;
+    padding: 4px 0;
+}
+.phones a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #25252c;
+}
+.phones a:hover{
+    color: #fd8300;
+}
+.mail::before{
+    background-position: -43px -42px;
+}
+.skype::before{
+    background-position: -2px -44px;
+}
+.mesenger::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    left: -8px;
+    top: 3px;
+    background-color: #e4e4ec;
+}
+.mesenger p{
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+}
+.mesenger a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #25252c;
+}
+.mesenger a:hover{
+    color: #fd8300;
+}
+.cta{
+    text-align: right;
+}
+.cta a{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #25252c;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+}
+.cta a:hover{
+    color: #fff;
+    background-color: #fd8300;
+    box-shadow: 0px 4px 2px -2px rgba(0,0,0,0.4);
+}
+.cpeshal-proposition{
+    background: #000 url(../image/fon.jpg);
+    background-size: cover;
+}
+.proposition-title{
+    margin: 0;
+    padding: 55px 0 7px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    color: #fff;
+}
+.proposition-discription{
+    margin: 0;
+    padding: 7px 0 7px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+.proposition-price{
+    margin: 0;
+    padding: 10px 0 45px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #fd8300;
+}
+.proposition-price span{
+    font-size: 40px;
+}
+.proposition-price sup{
+    font-size: 0.7em;
+}
+.main{
+    float: left;
+}
+aside{
+    margin: 0;
+    margin-top: 48px;
+    float: right;
+    border-radius: 4px;
+    overflow: hidden;
+}
+aside p{
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    background-color: #1f1f56;
+    color: #fff;
+}
+.aside-menu,
+.sup-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #e4e4ec;
+}
+.aside-menu a{
+    display: block;
+    margin: 0;
+    padding: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #25252c;
+}
+.aside-menu li{
+    position: relative;
+}
+.aside-menu>li::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 15px;
+    top: 19px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all 1s ease;
+}
+.aside-menu>li:hover::after{
+    border-right-color:#fff;
+    border-bottom-color:#fff;
+    transform: rotate(45deg);
+}
+.aside-menu>li:hover>a{
+    color: #fff;
+    background-color: #fd8300;
+}
+.aside-menu>li:hover .sup-menu{
+    display: block;
+}
+.sup-menu{
+    display: none;
+}
+.sup-menu a{
+    margin: 0;
+    padding-left: 30px;
+    color: #666; 
+}
+.sup-menu li:hover a{
+    color:#666;
+    background-color:#cecedd;
+}
+.content{
+    border-bottom: 1px solid #e4e4ec;
+}
+.content h1{
+    margin: 43px 0 0;
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    color: #24242b;
+}
+.content p{
+    width: 677px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    
+}
+.more{
+    margin: 28px 0 32px;
+    font-size: 14px;
+    color: #fd8300;
+    font-weight: bold;
+    display: inline-block;
+}
+.projects h2{
+    font-size: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    display: inline-block;
+}
+.projects sup{
+    font-size: 10px;
+}
+figure{
+    background: url(../image/edmunton.png)no-repeat left top;
+    margin: 0;
+    padding: 0;
+}
+figcaption{
+    margin-bottom: 48px;
+}
+figcaption h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+figcaption a{
+    text-decoration: none;
+    color: #1f1f56;
+}
+figcaption a:hover{
+    text-decoration: underline;
+}
+figcaption p{
+    margin: 0;
+    width: 220px;
+    font-size: 13px;
+    color: #9999a6;
+    line-height: 18px;
+}
+.footer-contacts{
+    padding: 40px 0 20px;
+    background-color: #ededf5;
+}
+.futer-menu ul{
+    margin: 0;
+    padding: 0;
+}
+.futer-menu li{
+    margin-bottom: 8px;
+    padding: 0;
+    list-style: none;
+}
+.futer-menu a{
+    font-size: 14px;
+    color: #666666;
+    text-decoration: none;
+}
+.futer-menu a:hover{
+    color: #fd8300;
+}
+.copy{
+    background-color: #dcdce6;
+}
+.copy p{
+    margin: 0;
+    padding: 18px 0 15px;
+    font-size: 13px;
+    color: #9999a6;
+    text-align: center;
+}
+.price h1{
+    font-size: 24px;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+}
+.price p{
+    width: 942px;
+    height: 56px;
+    font-size: 14px;
+    color: #666666;
+}
+table{
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow: hidden;
+}
+table tr th{
+    padding: 20px 20px 15px;
+    color: #fff;
+    font: 700 14px "Roboto Slab";
+    text-align: left;
+    background-color: #1f1f56;
+}
+table tr th:nth-child(5){
+    text-align: right;
+}
+tbody tr{
+    font-size: 14px;
+    color: #666;
+    background-color: #e4e4ec;
+    border-bottom: 1px solid #cdcddd;
+    transition: all 0.3s ease;
+}
+tbody tr:hover{
+    color: #fff;
+    background-color: #fd8300;
+}
+table tr td{
+    padding: 15px 20px;
+}
+table tr td:nth-child(5){
+    text-align: right;
+}
+.information{
+    font-size: 13px;
+    color: #666666;
+}
